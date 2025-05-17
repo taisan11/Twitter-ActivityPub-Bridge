@@ -1,11 +1,11 @@
 export type Env = {
   Bindings: {
-    DB: D1Database
-    preferredUsername: string
-    name: string
+    // DB: D1Database
+    // preferredUsername: string
+    // name: string
     PRIVATE_KEY: string
-    BASIC_USERNAME: string
-    BASIC_PASSWORD: string
+    // BASIC_USERNAME: string
+    // BASIC_PASSWORD: string
   }
 }
 

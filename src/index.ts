@@ -2,10 +2,11 @@ import { TwitterOpenApi } from 'twitter-openapi-typescript';
 import {Hono} from "hono"
 import type { Env } from "./types"
 import webfinger from "./webfinger"
+import user from "./user"
 
 const app = new Hono<Env>()
 const api = new TwitterOpenApi();
-const client = await api.getGuestClient();
+export const client = await api.getGuestClient();
 
 app.get("/", (c) => {
   return c.text("Hello World")
@@ -49,5 +50,7 @@ app.get("/nodeinfo/2.1", (c) => {
     "version": "2.1"
   })
 })
+
+app.route('/u', user)
 
 export default app

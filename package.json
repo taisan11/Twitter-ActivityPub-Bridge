@@ -7,9 +7,9 @@
   },
   "dependencies": {
     "hono": "^4.7.9",
-    "twitter-openapi-typescript": "^0.0.54"
+    "twitter-openapi-typescript": "^0.0.55"
   },
   "devDependencies": {
-    "wrangler": "^4.4.0"
+    "wrangler": "^4.15.2"
   }
 }
